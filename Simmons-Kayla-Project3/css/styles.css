@@ -1,80 +1,99 @@
 /*Main Styles*/
 
-/*set the background and foreground colors to certain shades of green*/
+/*set the background gradient and foreground colors to certain shades of green*/
 body {
-	background-color: #004003;
-	color: #00FF0E
+	background: #f6f8f9; /* Old browsers */
+	background: linear-gradient(135deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+	color: #007F07;
+	width: 100%;
 }
 
 /* puts box around content, box shadow, rounded corners, border*/
 #page {
-	color: hsla(119, 100, 23, .9);
-	border: 2px ridge #007F07;
-	border-radius: 5px;
-	margin: 30px;
-	padding: 15px;
-	box-shadow: 2px 2px 4px;
+	color: #027500;
+	border: 0.125em ridge #007F07;
+	border-radius: 0.313em;
+	margin: 5%;
+	padding: 5%;
+	box-shadow: 0.125em 0.125em 0.250em;
+	background: url("../images/acer.gif") repeat-x top;
 }
 
 
 /*changes the first heading to center text, sets color, shadow, line height, font*/
 #Top {
-	width: 200px;
-	height: 100px;
-	margin: 0px auto;
-	padding: 15px;
+	width: 98%;
+	height: 1%;
+	margin: 1% 0;
+	text-align: center;
+	padding: 0;
 	font-style: normal;
-	font-weight: 200;
-	font-size: 250%;
-	line-height: 150%;
+	font-weight: normal;
+	font-size: 2.5em;
+	line-height: 2.75em;
 	font-family: 'Vollkorn', serif;
-	color: #00FF0E;
-	text-shadow: 1px 1px #FFF;
+	color: #000;
+	text-shadow: 0.063em 0.063em #454545;
+}
+ /* floats next to each other*/
+#first-paragraph, #second-paragraph {
+	width: 46%;
+	float: left;
+	padding: 1%;
+	margin: 1% auto;
+	clear: right;
+}
+
+/*clears to the left so that this section starts on new line*/
+#third-paragraph {
+	clear: left;
+	
 }
 
 /*changes the unordered list to have a circle instead of a dot, sets color*/
 ul {
-	width: 200px;
-	margin: 15px 0px;
+	width: 50%;
+	margin: 5% 0;
+	padding:0 7em;
 	list-style-type: circle;
 	color: #00E530;
+	background: url("../images/navigate2.png") no-repeat left center;
 }
-
 
 /* sets size, font, color, text shadow*/
 h2 {
-	width: 200px;
-	margin: 15px;
+	width: 98%;
+	margin: 1%;
 	font-style: normal;
-	font-weight: 200;
-	font-size: 150%;
-	line-height: 150%;
+	font-weight: normal;
+	font-size: 2em;
+	line-height: 2em;
 	font-family: 'Vollkorn', serif;
 	color: #00FF0E;
-	text-shadow: 1px 1px #FFF;
+	text-shadow: 0.063em 0.063em #FFF;
 	text-align: justify;
 }
 
 /* sets size, font, color*/
 h3 {
-	width: 500px;
-	margin: 15px;
+	width: 98%;
+	margin: 1%;
 	color: #00FF0E;
-	font-family: 150% Georgia, Times, serif;
+	font: 1.5em Georgia, Times, serif;
 }
 
 /*applies font and color to all paragraphs*/
 p {
-	width: 1020px;
-	margin: 15px;
-	font: 125% Georgia, Times, serif;
+	width: 98%;
+	margin: 1%;
+	font: 1em Georgia, Times, serif;
 	color: #007F07;
 }
 
 /*sets ordered list to stay in decimal form and sets color*/
 ol {
-	width: 1020px;
-	margin: 15px 0px 15px;
+	width: 100%;
+	margin: 1% 0px 1%;
 	list-style-type: decimal;
 	color: #007F07;
 }
@@ -114,14 +133,14 @@ a:active {
 with rest of text*/
 figure {
 	display: block;
-	width: 500px;
-	margin: 15px;
+	width: 98%;
+	margin: 1%;
 }
 
 /*changes the captions on the pictures to be straight text unlike before, gives margins and sets font*/
 figcaption {
-	width: 500px;
-	margin: 5px 0px 15px;
-	font: 100% Georgia, Times, serif;
+	width: 98%;
+	margin: .5% 0;
+	font: .75em Georgia, Times, serif;
 	color: #007F07;
 }
