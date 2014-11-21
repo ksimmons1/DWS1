@@ -194,7 +194,6 @@ form {
 #name, #email, #radio, #age {
 	margin:5%;
 	font-size: .875em;
-	width: 100%;
 }
 
 /*puts a top border on footer and spaces the footer from page for a better looking layout*/
