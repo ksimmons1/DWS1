@@ -194,14 +194,7 @@ form {
 #name, #email, #radio, #age {
 	margin:5%;
 	font-size: .875em;
-	width: 50%;
-	float: left;
-}
-
-/*adds float to form content without messing up layout*/
-#comments {
 	width: 100%;
-	float: left;
 }
 
 /*puts a top border on footer and spaces the footer from page for a better looking layout*/
