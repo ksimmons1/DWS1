@@ -16,9 +16,20 @@ body {
 	margin: 5%;
 	padding: 5%;
 	box-shadow: 0.125em 0.125em 0.250em;
-	background: url("../images/acer.gif") repeat-x top;
+	background: url("../Images/acer.gif") repeat-x top;
 }
 
+/* puts a side bar on with left border, sets width, padding line height and margins*/
+aside{
+	float: right;
+	width:10%;
+	border-left: .063em solid #007F07;
+	padding: 1%;
+	height: 100%;
+	margin-top: 3%;
+	margin-left: 2%;
+	line-height: 1.5em;
+}
 
 /*changes the first heading to center text, sets color, shadow, line height, font*/
 #Top {
@@ -37,11 +48,35 @@ body {
 }
  /* floats next to each other*/
 #first-paragraph, #second-paragraph {
-	width: 46%;
+	width: 40%;
 	float: left;
 	padding: 1%;
 	margin: 1% auto;
-	clear: right;
+}
+
+/*sets width and margin and collapses border spacing*/
+table{
+	width: 90%;
+	margin: 3% 10%;
+	border-spacing: 0;
+}
+
+/*transforms table headings into uppercase*/
+th{
+	text-transform: uppercase;
+}
+
+/*font size, padding inside cells, centers text and puts borders on table cells*/
+th, td{
+	padding: 1.5%;
+	font-size: 1em;
+	text-align: center;
+	border: .063em solid #FFF;
+}
+
+/*puts a highlight on table row as cursor moves over*/
+tr:hover {
+		background-color: #f6f8f9;
 }
 
 /*clears to the left so that this section starts on new line*/
@@ -143,4 +178,35 @@ figcaption {
 	margin: .5% 0;
 	font: .75em Georgia, Times, serif;
 	color: #007F07;
+}
+ /* adds style to entire form*/
+form {
+	padding:5%;
+	margin: 5%;
+	font-size:1em;
+	color: #007F07;
+	border: .063em solid #007F07;
+	border-radius: .5em;
+	text-align: center;
+	background-color: #FFF;
+}
+/*adds text style and margin to form contents*/
+#name, #email, #radio, #age {
+	margin:5%;
+	font-size: .875em;
+	width: 100%;
+	float: left;
+}
+
+/*adds float to form content without messing up layout*/
+#comments {
+	width: 100%;
+	float: left;
+}
+
+/*puts a top border on footer and spaces the footer from page for a better looking layout*/
+footer {
+ 	border-top: .063em solid #007F07;
+ 	margin-top: 5%;
+ 	padding-top: 5%;
 }
